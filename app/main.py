@@ -13,7 +13,8 @@ API_KEY = os.getenv("API_KEY")
 def get_weather() -> None:
 
     if not API_KEY:
-        print("API_KEY is missing or empty. Please set the environment variable.")
+        print("API_KEY is missing or empty. "
+              "Please set the environment variable.")
         return
 
     params = {
